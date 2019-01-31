@@ -1,0 +1,13 @@
+.QuestionForm {
+  margin: auto;
+  @media screen and (min-width: 992px) {
+    width: 56%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 767px) {
+    width: 98%;
+  }
+  
+}

@@ -1,0 +1,11 @@
+.ButtonClassic.btn {
+  background-color: rgb(109, 194, 209);
+  border: 1px solid rgb(109, 194, 209);
+  margin: 1.5em auto;
+  
+  &:hover {
+    background-color: white;
+    color: rgb(109, 194, 209);
+    border: 1px solid rgb(109, 194, 209);
+  }
+}

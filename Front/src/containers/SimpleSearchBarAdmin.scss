@@ -1,0 +1,70 @@
+@import '../variables.scss';
+
+.SimpleSearchBarAdmin{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px grey;
+  vertical-align: middle;
+  margin: 1em auto;
+  border-radius: 10px;
+  background-color: white;
+  color: $titleBlue;
+  max-width: 99%;
+
+  .searchbar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    input.SearchCompany {
+      background-color: transparent;
+    }
+  }
+
+  button.search-button {
+    position: absolute;
+    z-index: 50;
+    right: 1em;
+    top:18%;
+    padding: 0 2px;
+    width: fit-content;
+    -webkit-appearance: none;
+    background-color: white;
+    margin: auto 0;
+    outline: none;
+    border: none;
+    border-style: hidden;
+    &:hover {
+      cursor: pointer;
+    }
+    img {
+      border: none;
+      width: 1.5em;
+      background-color: white;
+    }
+    
+  }
+  
+  @media screen and (min-width: 992px) {
+    & {
+      max-width: 30em;
+      min-width: 25em;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    & {
+      min-width: 20em;
+      max-width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px){
+    & {
+      max-width: 80%;
+    }
+  }
+  
+} 

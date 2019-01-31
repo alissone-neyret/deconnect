@@ -1,0 +1,47 @@
+.SuggestCompanyQuestionnaire {
+  position: absolute;
+  background: white;
+  z-index: 10;
+  width: 100%;
+  top: 100%;
+  box-shadow: 0px 4px 17px 2px rgba(83, 77, 77, 0.45);
+
+  .list-result { 
+    padding: 0;
+    margin:0;
+    list-style: none;
+    list-style-position: inside;
+    
+    li {
+      text-align: left;
+      background-color: white;
+      width: 100%;
+      box-sizing: border-box;
+
+      .button-list{
+        padding: 0.3rem 1rem ;
+        text-align: left;
+        background: none;
+        border: none;
+        width: 100%;
+        margin: 0;
+        outline-color: transparent;
+        color: inherit;
+        &:hover{
+          cursor: pointer;
+          background-color: lightgray;
+
+        }
+      }
+      &.nb-search-result, &.no-result-message { 
+        padding: 0.3rem 1rem ;
+      }
+      &:hover{
+        cursor: default;
+      }
+      &:focus{
+        background-color:lightgray;
+      }
+    }
+  }
+}

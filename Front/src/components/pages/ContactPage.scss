@@ -1,0 +1,55 @@
+@import '../../variables.scss';
+
+.ContactPage {
+  color: $titleBlue;
+  section {
+    min-height: 70vh;
+    .container-title {
+      max-width: 95%;
+      width: fit-content;
+      margin: auto;
+      padding-top: 0.8em;
+      padding-bottom: 0.4em;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.404);
+      box-shadow: 2px 2px 12px rgb(138, 136, 136);
+      h2 {
+        padding-left: 2em;
+        padding-right: 2em;
+      }
+    }
+    .container-content {
+      max-width: 95%;
+      min-height: 25em;
+      padding: 3em 1em;
+      box-shadow: 2px 2px 12px rgb(138, 136, 136);
+      border-radius: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+      .container-title {
+        margin: 6em auto 2em;
+        min-width: 20%;
+      }
+      .container-content {
+        max-width: 75%;
+      }
+    }
+    @media screen and (min-width: 576px) and (max-width: 767px){
+      .container-title {
+        margin: 5em auto 2em;
+      }
+      .container-content {
+        max-width: 90%;
+      }
+    }
+    @media screen and (max-width: 575px){
+      .container-title {
+        margin: 4em auto 1em;
+      }
+      .container-content {
+        max-width: 95%;
+      }
+    }
+  }
+}

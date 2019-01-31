@@ -1,0 +1,88 @@
+@import '../variables.scss';
+
+.CompanyDetails {
+  .container-info-company {
+    margin-bottom: 3%;
+    padding: 2em 3em;
+    background-color: $bgBeige;
+    border-radius: 10px;
+
+    .row-title-company {
+      justify-content: center;
+      
+      .company-describe {
+        padding: 1em;
+        h2 {
+          color: $titleBlue;
+          font-weight: bold;
+          font-size: 2.7rem;
+        }
+      }
+
+    h3 {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }
+
+    .company-name {     
+      .image-company{
+        border-radius: 10px;
+        background: white;
+        max-width: 200px;
+        padding:1.5rem;
+        box-sizing: content-box;
+        margin-top: 5%;
+        margin-bottom: 10%;
+      }
+
+      .col-describe-company-text {
+        margin-left: -100px;
+      }  
+    }
+    
+    .graduate-resume {
+      .label-company-details {
+        font-weight: bold;
+        margin-right: 0.2em;
+      }
+
+      .col-details-company {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10%;        
+      }
+
+      @media screen and (max-width: 990px) {
+        .col-details-company {
+          padding: 0;
+          align-items: center;
+        }
+      }
+
+      .col-graduate {
+       .company-grade {
+          margin-top: 0.6em;
+          margin-bottom: 0;
+          font-family: 'Major Mono Display', monospace;
+          font-size: 1em;
+        }
+
+        .image-graduate-resume{
+          width: 40%;
+        }
+
+        .number-report {
+          margin-top: 25px;
+        }
+  
+        .number-review{
+          font-family: 'Major Mono Display', monospace;
+          font-size: 2em;
+          font-weight: 600;
+        }
+      }
+    }      
+  }
+}

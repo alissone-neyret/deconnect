@@ -1,0 +1,33 @@
+.AnswerGrade {
+  Form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    button {
+      background: none;
+      padding: 0;
+      border: none;
+      color: inherit;
+      outline-color: transparent;
+
+      span {
+        color: rgba(80, 80, 80, 0.493);
+        font-size: 2.75em;
+        transition: color .1s;
+        background: none;
+        border: none;
+      }
+
+      &:hover,
+      &:focus,
+      &:hover~button,
+      &:focus~button {
+        span {
+          color: rgb(233, 187, 37);
+        }
+        cursor: pointer;
+      }
+    }    
+  }
+}

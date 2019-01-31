@@ -1,0 +1,30 @@
+.Top7 {
+  padding-bottom: 3%;
+
+  .row-top7 {
+    justify-content: center;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }  
+}
+
+.card.cards-top7 {
+  margin-top : 30px;
+  text-decoration: none;
+  justify-content: center;
+  transition: transform .2s;
+  padding: 11px 5px 10px;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 2px 3px 9px rgb(163, 163, 163);
+}
+
+.cards-title-top7 {
+  text-decoration: none;
+}
+
+.cards-top7:hover {
+  transform: scale(1.1);
+}

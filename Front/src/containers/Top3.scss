@@ -1,0 +1,60 @@
+@import '../variables.scss';
+
+.Top3 {
+  margin-top: 50px;
+  margin-bottom: 5%;
+
+  h2 {
+    color: $titleBlue;
+  }
+
+  .btn {
+    max-width: 80%;
+    font-size: 100%;
+    background-color:$buttonBlue;
+    border: 1px solid $buttonBlue;
+  }
+  .btn:hover {
+    background-color: white;
+    color: $buttonBlue;
+    border: 1px solid $buttonBlue;
+  }
+
+  .image-first-top3{
+    width: 30%;
+  }
+
+  .row-titre-top3 {
+    margin-bottom : 30px;
+  }
+  
+  .row-top3 {
+    justify-content: center;
+  
+    .cards-top3-two {
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 3px 9px rgb(163, 163, 163);
+    }
+  }
+
+  .row-top3-first {
+    justify-content: center;
+
+    .cards-top3 {
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 3px 9px rgb(163, 163, 163);
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+      .row-top3-first {
+        margin-bottom: -350px;
+      }
+  }
+
+  .col-top3-other {
+    border-radius: 5px;
+  }
+}

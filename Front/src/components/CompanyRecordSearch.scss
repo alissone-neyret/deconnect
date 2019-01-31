@@ -1,0 +1,124 @@
+@import '../variables.scss';
+
+.CompanyRecordSearch {
+  padding-top: 1rem;
+
+  .btn {
+    max-width: 80%;
+    font-size: 100%;
+    background-color: rgb(109, 194, 209);
+    border: 1px solid rgb(109, 194, 209);
+    margin: 3%;
+  }
+
+  .btn:hover {
+    background-color: white;
+    color: rgb(109, 194, 209);
+    border: 1px solid rgb(109, 194, 209);
+  }
+
+  .container-header-companies-admin {
+    margin-bottom: 3rem;
+  }
+  .container-info-company {
+    margin: 5rem auto 2rem;
+    padding: 1rem;
+    background-color: $bgBeige;
+    border-radius: 10px;
+
+    .imgPreview {
+      width: 150px;
+      img{
+        width: 150px;
+      }
+    }
+
+    .company-name {
+      justify-content: left;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;  
+
+      .tabulation-company-details-mail{
+        margin-right: 10%;
+        font-weight: bold;
+      }
+      .tabulation-company-details-website{
+        margin-right: 10%;
+        font-weight: bold;
+      }
+      .tabulation-company-details-tel{
+        margin-right: 15%;
+        font-weight: bold;
+      }
+
+      .tabulation-company-details-referent{
+        margin-right: 1%;
+        font-weight: bold;
+      }
+
+      .tabulation-company-details-adress{
+        margin-right: 4%;
+        font-weight: bold;
+      }
+
+      .address {
+        margin-right: 5%;
+      }
+      
+      .image-company{
+        border-radius: 10px;
+        background: white;
+        max-width: 200px;
+        padding:1.5rem;
+        box-sizing: content-box;
+        margin-left: 15%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+      }
+      @media screen and (max-width: 900px) {
+        .image-company {
+          margin-left: 15%;
+        }
+      }
+
+      .contact-details {
+        margin-left: 18%;
+        margin-right: -10px;
+
+        p{
+          text-align: start;
+        }
+      }
+    }
+
+    .company-describe {
+      padding: 2rem;
+
+      h2 {
+        color: $titleBlue;
+      }
+      
+      .describe-company-text {
+        margin-top: 2rem;
+        text-align: justify;
+        
+      }
+
+      .graduate-resume {
+        margin-top: 8%;
+      }
+
+      .image-graduate-resume{
+        width: 35%;
+        margin-bottom: 4%;
+      }
+
+      .number-review{
+        font-family: 'Major Mono Display', monospace;
+        font-size: 1.5em;
+        margin-bottom: -10px;
+      }
+    }
+  } 
+}

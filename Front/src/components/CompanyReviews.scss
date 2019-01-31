@@ -1,0 +1,28 @@
+.header-card {
+  display: flex;
+  justify-content: space-between;
+
+  p{
+    width: 150px;
+  }
+}
+
+.col-card-company-reviews {
+  margin-bottom: 3%;
+}
+
+@media (max-width: 767px) {
+  .col-card-company-reviews {
+    margin-bottom: -7%;
+  }
+
+  .button-delete {
+    margin-bottom: 7%;
+  }
+}
+
+.col-delete {
+  .button-delete {
+    margin-top: 60px; 
+  }
+}

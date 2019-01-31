@@ -1,0 +1,30 @@
+@import '../variables.scss';
+
+.SectionsHomePage {
+  .card {
+    border-radius: 10px;
+    box-shadow: 2px 3px 9px rgb(163, 163, 163);
+  }
+
+  h2 {
+    color: $titleBlue;
+  }
+
+  .card-title {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 30px;  
+  }
+  .card-body.card-body-law {
+    padding-bottom: 1.3rem;
+  }
+  .column-sections-homepage1 {
+    padding : 3%;    
+  }
+  .column-sections-homepage2 {
+    padding : 3%;
+  }
+  p {
+    text-align: justify;
+  }
+}

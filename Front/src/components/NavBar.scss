@@ -1,0 +1,57 @@
+@import '../variables.scss';
+
+.NavBar {
+  background-color: $titleBlue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  
+  .navbar {
+    padding-top: 12px;
+    padding-bottom: 8px;    
+
+    .navbar-brand {
+      padding-bottom: 0;
+
+      .navbarLogo {
+        width: 30px;
+        padding: 3px;
+        margin-right: 10px;
+        margin-bottom: 2%;
+      }
+      span {
+        font-size: 120%
+      }
+      @media screen and (max-width: 800px) {
+        span {
+          font-size: 85%
+        }
+      }
+    }
+
+    li.nav-item {
+      margin: 10px auto;
+      a {
+        padding: 15px;
+        font-size: 120%;
+      }
+      a:hover{
+        color: rgb(106, 193, 214);
+      }
+    }    
+
+    a {
+      color: white;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+  }
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+  } 
+}

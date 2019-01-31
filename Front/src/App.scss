@@ -1,0 +1,69 @@
+@import './variables.scss';
+
+.App {
+
+  font-size: 1.15rem;
+  font-family: Roboto, sans-serif;
+  color: $titleBlue;
+  text-align: center;
+  height: 100%;
+  position: relative;
+
+  @media screen and (min-width: 992px) {
+
+    h1{
+      font-size: 1.7em;
+    }
+
+    h2 {
+      font-size: 1.7em;
+    }
+
+    h3{
+      font-size: 1.4em;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+
+    h1{
+      font-size: 1.5em;
+    }
+
+    h2 {
+      font-size: 1.48em;
+    }
+
+    h3{
+      font-size: 1.4em;
+    }
+  }
+  @media screen and (min-width: 576px) and (max-width: 767px){
+
+    h1{
+      font-size: 1.5em;
+    }
+
+    h2 {
+      font-size: 1.3em;
+    }
+
+    h3{
+      font-size: 1.2em;
+    }
+  }
+  @media screen and (max-width: 575px) {
+
+    h1{
+      font-size: 1.35em;
+    }
+
+    h2 {
+      font-size: 1.28em;
+    }
+
+    h3{
+      font-size: 1.1em;
+    }
+  }
+}
+

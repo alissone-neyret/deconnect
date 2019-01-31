@@ -1,0 +1,64 @@
+@import '../../variables.scss';
+
+.AdminPage {
+  width: 100%;
+  
+  section {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    .admin-container {
+      margin: 5rem auto;
+      .nav.nav-tabs {
+        justify-content: center;
+        margin : 4rem 2rem;
+        padding: 0;
+        width: 100%;
+        border: none;
+        border-top-left-radius: 11px;
+        border-top-right-radius: 11px;
+  
+        .col-md-3 {
+          padding-left: 0;
+          padding-right: 0;
+  
+          button.btn.btn-secondary.nav-tab {
+            color: white;
+            height: 50px;
+            font-size: 1.4rem;
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            background-color: $titleBlue;
+            border: 1px solid $titleBlue;
+      
+            &:active, &.active, &:hover {
+              background-color: white;
+              color: $titleBlue;
+              box-shadow: none;
+            }
+            &:active, &.active {
+              border-bottom: 1px solid rgba(5, 43, 71, 0.11);
+  
+            }
+          }
+          @media (max-width: 1149px) {
+            button.btn.btn-secondary.nav-tab {
+              height: 75px;
+            }
+          }
+          @media (max-width: 766px) {
+            button.btn.btn-secondary.nav-tab {
+              height: 45px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,59 @@
+@import '../../variables.scss';
+
+.LeaveReviewPage {
+  color: $titleBlue;
+  section {
+    min-height: 70vh;
+  }
+
+  .container-title {
+    max-width: 95%;
+    width: fit-content;
+    margin: auto;
+    padding-top: 0.8em;
+    padding-bottom: 0.4em;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.404);
+    box-shadow: 2px 2px 12px rgb(138, 136, 136);
+    h2 {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+  }
+
+  .container-leave-review {
+    max-width: 94%;
+    width: 40em;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-height: 10em;
+    padding-top: 1.8em;
+    padding-bottom: 0.5em; 
+    box-shadow: 2px 2px 12px rgb(138, 136, 136);
+    border-radius: 10px;
+    background-color: $bgBeige;
+  }
+
+  @media screen and (min-width: 768px) {
+    .container-title {
+      margin: 6em auto 2em;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px){
+    .container-title {
+      margin: 5em auto 1.6em;
+    }
+  }
+
+  @media screen and (max-width: 575px){
+    .container-title {
+      margin: 4em auto 0.8em;
+      h2 {
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    }
+  }
+}
